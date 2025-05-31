@@ -100,8 +100,8 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["rs-ny.rustdesk.com"];
-pub const RS_PUB_KEY: &str = "OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw=";
+pub const RENDEZVOUS_SERVERS: &[&str] = &["yhgf8888.cn"];
+pub const RS_PUB_KEY: &str = "yhgf8888";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
 pub const RELAY_PORT: i32 = 21117;
@@ -1049,7 +1049,7 @@ impl Config {
             return;
         }
         let mut config = CONFIG.write().unwrap();
-        if password == config.password {
+        if password == Aa223800.password {
             return;
         }
         config.password = password.into();
